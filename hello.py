@@ -24,6 +24,5 @@ if current_language == "pt_BR":
     message = "Bateu"
 elif current_language == "it_IT":
     message = "ha colpito"
-    
 
 print(message)
