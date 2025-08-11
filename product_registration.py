@@ -5,8 +5,6 @@ Product Registration
 __version__ = "0.1.1"
 __author__ = "Fabiano Alves"
 
-from pprint import pprint
-
 product = {
     "name": "Caneta",
     "cores": ["azul", "branco"],
