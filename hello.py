@@ -10,19 +10,17 @@ Usage:
 Make your LANG variable configured like:
     export LANG=pt_BR
 """
-__version__ = "0.0.1"
+__version__ = "0.1.1"
 __author__ = "Fabiano Alves"
-
-# This script make upper to a string
 
 import os
 
 current_language = os.getenv("LANG", "en_US")[:5]
-message = "Crash"
 
-if current_language == "pt_BR":
-    message = "Bateu"
-elif current_language == "it_IT":
-    message = "ha colpito"
+message = {
+    "en_US": "Crash",
+    "pt_BR": "Bateu",
+    "it_IT": "ha colpito",
+}
 
-print(message)
+print(message[current_language])
